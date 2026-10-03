@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Books | TCET-LMS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html" class="active">Explore Books</a>
+      </nav>
+      <a href="index.html" class="logo">TCET-LMS</a>
+    </header>
+    <main class="books-page">
+      <div class="page-head">
+        <h1>Explore books</h1>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search by title, author or category"
+          aria-label="Search books"
+        />
+      </div>
+      <div class="chips" id="chips"></div>
+      <div id="bookGrid"></div>
+    </main>
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-box">
+        <button class="modal-close" id="modalClose" aria-label="Close">
+          &times;
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p><strong>TCET-LMS</strong> &middot; Library Management System</p>
+      <p>Open on working days, 9 am to 5 pm &middot; library@tcet.example</p>
+    </footer>
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script src="books.js"></script>
+  </body>
+</html>
